@@ -39,5 +39,5 @@ fi
 
 if [ -n "$delete" ]; then
     VBoxManage closemedium disk "$orig_disk"
-    rm -i "$orig_disk"
+    rm -f "$orig_disk"
 fi
