@@ -1,0 +1,16 @@
+---
+- name: Configure a dev machine to run AOSP build docker containers
+  hosts: 127.0.0.1
+  connection: local
+  tasks:
+
+  - name: Install python-pip for docker-py for Ansible
+    apt: name=python-pip state=present
+    sudo: yes
+
+  - name: Install docker-py for Ansible
+    pip: name=docker-py
+    sudo: yes
+
+  - name: Fetch AOSP Docker image
+    docker_image: name="kylemanna/aosp" state=present

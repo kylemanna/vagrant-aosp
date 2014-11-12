@@ -66,4 +66,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", \
     inline: "curl -s https://raw.githubusercontent.com/kylemanna/docker-aosp/master/utils/aosp -o /usr/local/bin/aosp && chmod 755 /usr/local/bin/aosp"
 
+  # Ansible doesn't add value yet?
+  #config.vm.provision "shell", inline: "echo -e '[local]\nlocalhost\n' > /etc/ansible/hosts"
+  #config.vm.provision "ansible" do |ansible|
+  #  ansible.playbook = "playbooks/aosp-dev.yml"
+  #end
+
 end
