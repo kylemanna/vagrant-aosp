@@ -1,0 +1,8 @@
+#
+# Setting for VirtualBox VMs
+#
+# * shamelessly stolen from coreos-vagrant
+#
+#$vb_gui = false
+$vb_memory = 4096
+$vb_cpus = 8
