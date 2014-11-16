@@ -30,3 +30,13 @@ Quickstart
 
 5. Review [kylemanna/aosp](https://github.com/kylemanna/docker-aosp) for next steps.
 
+Vagrant Cloud
+-------------
+
+I've looked at setting up Vagratn Cloud, but it doesn't seem that useful just yet.
+
+* https://vagrantcloud.com/kylemanna/boxes/aosp
+
+Example usage:
+
+    vagrant init kylemanna/aosp
